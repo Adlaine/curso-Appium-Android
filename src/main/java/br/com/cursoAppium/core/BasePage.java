@@ -1,11 +1,10 @@
-package Appium.core;
+package br.com.cursoAppium.core;
 
-import static Appium.core.DriverFactory.getDriver;
+import static br.com.cursoAppium.core.DriverFactory.getDriver;
 
 import org.openqa.selenium.By;
 
-public class DSL {
-
+public class BasePage {
 	public void escrever(By by, String texto) {
 		getDriver().findElement(by).sendKeys(texto);
 	}
@@ -31,6 +30,6 @@ public class DSL {
 		return getDriver().findElement(by).getAttribute("checked").equals("true");
 	}
 	
-
+	
 
 }
