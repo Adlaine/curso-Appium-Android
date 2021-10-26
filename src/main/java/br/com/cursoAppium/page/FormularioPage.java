@@ -59,4 +59,9 @@ public class FormularioPage extends BasePage{
 		return obterTexto((By.xpath("//android.widget.TextView[starts-with(@text, 'Switch:')]")));
 	}
 
+	public void salvarDemorado() {
+		clicarPorTexto("SALVAR DEMORADO");
+		
+	}
+
 }
